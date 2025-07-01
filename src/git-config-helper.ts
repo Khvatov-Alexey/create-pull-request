@@ -119,7 +119,7 @@ export class GitConfigHelper {
   }
 
   async savePersistedAuth(): Promise<void> {
-    const serverUrl = new URL(`https://${this.getGitRemote().hostname}`)
+    const serverUrl = new URL(`http://${this.getGitRemote().hostname}`)
     this.extraheaderConfigKey = `http.${serverUrl.origin}/.extraheader`
     // Save and unset persisted extraheader credential in git config if it exists
     this.persistedExtraheaderConfigValue = await this.getAndUnset()
