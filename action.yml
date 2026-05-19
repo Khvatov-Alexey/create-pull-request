@@ -54,9 +54,6 @@ inputs:
   sign-commits:
     description: 'Sign commits as `github-actions[bot]` when using `GITHUB_TOKEN`, or your own bot when using GitHub App tokens.'
     default: false
-  ssl:
-    description: use HTTPS or HTTP
-    default: true
   title:
     description: 'The title of the pull request.'
     default: 'Changes by create-pull-request action'

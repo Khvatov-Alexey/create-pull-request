@@ -47,9 +47,9 @@ export class GitHubHelper {
       options.auth = `${token}`
     }
     if (githubServerHostname !== 'github.com') {
-      options.baseUrl = `http://${githubServerHostname}/api/v1`
+      options.baseUrl = `https://${githubServerHostname}/api/v1`
     } else {
-      options.baseUrl = 'http://api.github.com'
+      options.baseUrl = 'https://api.github.com'
     }
     options.throttle = throttleOptions
     this.octokit = new Octokit(options)

@@ -50,7 +50,7 @@ describe('utils tests', () => {
       'github.com',
       'peter-evans/create-pull-request'
     )
-    expect(url1).toEqual('http://github.com/peter-evans/create-pull-request')
+    expect(url1).toEqual('https://github.com/peter-evans/create-pull-request')
 
     const url2 = utils.getRemoteUrl(
       'SSH',
@@ -65,7 +65,7 @@ describe('utils tests', () => {
       'peter-evans/create-pull-request'
     )
     expect(url3).toEqual(
-      'http://mygithubserver.com/peter-evans/create-pull-request'
+      'https://mygithubserver.com/peter-evans/create-pull-request'
     )
   })
 
